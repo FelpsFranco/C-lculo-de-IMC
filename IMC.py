@@ -18,8 +18,10 @@ def info(indice_imc):
     resultado(indice_imc)
 
 def resultado(indice_imc):
+    if indice_imc < 18.5:
+        print('Seu Índice de Massa Corporal {:.2f}, indica MAGREZA'.format(indice_imc))
     if indice_imc >= 18.5 and indice_imc <= 24.9:
-        print('Seu Índice de Massa Corporal está NORMAL {:.2f}'.format(indice_imc))
+        print('Seu Índice de Massa Corporal {:.2f} está NORMAL '.format(indice_imc))
     if indice_imc >= 25.9 and indice_imc <= 29.9:
         print('Cuidado de Acordo com seu Índice de Massa Corporal {:.2f}, você está com SOBREPESO! '.format(indice_imc))
     if indice_imc >= 30.0 and indice_imc <= 39.9:
